@@ -6,7 +6,7 @@ void quickSort(Iterator left, Iterator right)
 {
 	Iterator i = left;
 	Iterator j = right;
-	Iterator center = left;
+	Iterator center = right;
 	while (i <= j)
 	{
 		while (*i < *center) i++;
