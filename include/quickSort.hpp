@@ -6,11 +6,11 @@ void quickSort(Iterator left, Iterator right)
 {
 	Iterator i = left;
 	Iterator j = right;
-	Iterator center = right;
+	Iterator f = right;
 	while (i <= j)
 	{
-		while (*i < *center) i++;
-		while (*j > *center) j--;
+		while (*i < *f) i++;
+		while (*j > *f) j--;
 		if (i <= j)
 		{
 			swap(*i, *j);
